@@ -1,0 +1,8 @@
+<h1>一覧</h1>
+<% @posts.each do |post| %>
+  <span><%= post.title %></span>
+  <span><%= post.actor1 %> 他</span>
+  <span><%= post.genre %></span>
+<% end %>
+
+<%= link_to '新規投稿', new_post_path %>

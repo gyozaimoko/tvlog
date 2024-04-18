@@ -1,0 +1,10 @@
+<%= form_with model: @post, local: true do |form| %>
+<span><%= form.text_field :title, placeholder:"タイトル" %></span>
+<span><%= form.text_field :actor1, placeholder:"出演者" %></span>
+<span><%= form.text_field :actor2, placeholder:"出演者" %></span>
+<%= form.text_field :actor3, placeholder:"出演者" %>
+<%= form.text_field :genre, placeholder:"ジャンル" %>
+<%= form.text_field :writer, placeholder:"脚本家" %>
+<%= form.text_area :memo, placeholder:"メモ" %>
+<%= form.submit "送信" %>
+<% end %>
